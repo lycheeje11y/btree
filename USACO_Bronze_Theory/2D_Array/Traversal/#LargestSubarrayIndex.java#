@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class LargestSubarrayIndex {
+	static Scanner f;
+	public static void main(String[] args) {
+		f = new Scanner(System.in);
+
+		int N = f.nextInt();
+
+		int ans = -1;
+		int largest = Integer.MIN_VALUE;
+
+
+		int[][] arr = new int[N][N];
+		for (int r = 0; r < N; r++) {
+			int sum = 0;
+			for (int c = 0; c < N; c++) {
+				int input = f.nextInt();
+				arr[r][c] = input;
+				if (input > largest) {
+					ans = r;
+					continue;
+				}
+			}
+		}
+
+		System.out.println(ans);
+	}
+}

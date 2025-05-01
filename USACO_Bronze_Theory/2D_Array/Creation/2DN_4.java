@@ -1,0 +1,20 @@
+import java.util.Arrays;
+
+public class Main {
+	static void solve(int N) {
+		int[][] arr = new int[N][N];
+
+		int start = N * N;
+
+		for (int r = 0; r < arr.length; r++) {
+			for (int c = 0; c < arr[r].length; c++) {
+				arr[r][c] = start;
+					start--;
+			}
+		}
+
+		for (int[] ar : arr) {
+			System.out.println(Arrays.toString(ar));
+		}
+	}
+}
