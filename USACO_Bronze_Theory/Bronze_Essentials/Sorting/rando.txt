@@ -1,0 +1,28 @@
+
+951. Weak Lock
+262
+A lock making company ran into some issues with their recent model. It currently allows combinations that are within a certain range of the actual combination to unlock it! There are 4 positions on the lock, and each dial ranges from 1 to 9 inclusive. Currently, if the dial is within 2 of the correct number, it will still unlock the lock.
+Example
+If this is the correct combination...
+
+2 4 3 1
+
+Then any combinations that consist of the numbers in these ranges are considered valid.
+
+4 6 5 3
+| | | |
+1 2 1 1
+
+Input Format
+The input contains one line consisting of 4 numbers. These numbers are the actual combination for the given lock.
+Output Format
+Print the amount of valid combinations there are based on the given combination.
+Sample Input
+
+2 4 3 1
+
+Sample Output
+
+300
+
+
