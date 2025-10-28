@@ -1,0 +1,31 @@
+
+613. Most Followers
+187
+Social beedia is starting to pick up in the hive. 
+They are using a new platform called MyHive where bees can follow each other and leave likes and comments on their posts.
+The developers of MyHive are developing a way to track which bees are following other bees 
+and need your help!
+Help them determine which bee has the most followers!
+Input Format
+The first line contains N, denoting the number of bees.
+For each bee:
+The first line contains their username and the number of bees they follow.
+The second line contains the usernames of the bees they follow.
+Output Format
+Print the username of the bee with the most followers with a list of their followers in alphabetical order.
+Sample Input
+
+4
+busybee 2
+NoneYoBeesWax xDaRkBeEx
+VIBEe 1
+xDaRkBeEx
+NoneYoBeesWax 2
+busybee VIBEe
+beeauty 4
+busybee VIBEe NoneYoBeesWax xDaRkBeEx
+
+Sample Output
+
+xDaRkBeEx - VIBEe beeauty busybee
+

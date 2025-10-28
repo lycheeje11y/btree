@@ -1,0 +1,38 @@
+
+1001. Dice Game
+281
+This question has the same scenario as Board Game and will assume you have an understanding of that question.
+In Dice Game, the player will roll a D sided dice to determine their starting position on the board.
+So, if the player is using a 4 sided dice, they may start potentially at position 1 or up to position 4 initially and start their game from there.
+Input Format
+The first line will contain N and M.
+The second line will contain N space separated integers, indicating the board state.
+The next M lines will contain an integer, denoting a D sided dice. D is guaranteed to be between 1 and N inclusive.
+Output Format
+For each die, print how many outcomes of each dice will allow the player to win.
+Example
+
+1 3 2 4 2 4 5 0
+
+If the player uses a 4 sided dice...
+Starting from position 1: No
+Starting from position 2: No
+Starting from position 3: No
+Starting from position 4: Yes
+
+Total: 1
+
+Sample Input
+
+8 3
+1 3 2 4 2 4 5 0
+4
+6
+8
+
+Sample Output
+
+1
+1
+2
+

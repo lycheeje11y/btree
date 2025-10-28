@@ -1,0 +1,20 @@
+
+597. Cookies
+265
+There is a line of N people who want cookies and we have N packs of cookies available to feed them. However, each person has a minimum number of cookies they need to eat in order to be satisfied. Determine the maximum number of people that can be satisfied.
+When a person takes a pack of cookies, they take the entire pack of cookies.
+Input Format
+The first line of the input contains N, denoting the number of people and packs of cookies.
+The next line of the input contains N integers, denoting the number of cookies each person needs to be satisfied.
+The last line of the input contians N integers, denoting the number of cookies in each pack.
+Output Format
+Print the maximum number of people that can be satisfied.
+Sample Input
+
+6
+1 4 2 3 2 3
+1 2 3 1 2 3
+
+Sample Output
+
+5

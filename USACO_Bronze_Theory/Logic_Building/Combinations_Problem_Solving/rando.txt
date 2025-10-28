@@ -1,0 +1,19 @@
+968. Letter Combinations
+160
+Input Format
+The first line of input will contain N, denoting the length of the String on the next two lines.
+The second line contains an N length String.
+The third line contains an N length String.
+Output Format
+Print the count of unique 2 length substrings that can be produced by the letters of these two Strings.
+The first letter of each substring comes from the first word and the second letter of each substring comes from the second.
+Sample Input
+
+5
+hello
+world
+
+Sample Output
+
+20
+
