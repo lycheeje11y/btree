@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <iostream>
 #include <map>
 #include <set>
@@ -9,7 +8,8 @@ int main() {
   int N;
   cin >> N;
 
-  map<string, set<string>> users;
+  map<string, set<string>> bees;
+
   for (int i = 0; i < N; i++) {
     string user;
     int num;
@@ -20,29 +20,27 @@ int main() {
       string input;
       cin >> input;
 
-      if (users.find(input) == users.end()) {
-        users.insert(input, {user});
+      if (bees.find(input) != bees.end()) {
+        bees[input].insert(user);
       } else {
-        users[user].insert(user);
+        bees.insert({input, {user}});
       }
     }
   }
 
   int greatest = 0;
   string ans;
-
-  for (auto user : users) {
-    if (user.second.size() > greatest) {
-      greatest = user.second.size();
+  for (auto bee : bees) {
+    if (bee.second.size() > greatest) {
+      greatest = bee.second.size();
+      ans = bee.first;
     }
-
-    ans = user.first;
   }
 
-  sort(users[ans].begin(), users[ans].end());
-  cout << ans << " - ";
-  for (string i : users[ans]) {
-    cout << i << " ";
+  cout << ans + " - ";
+  for (string i : bees[ans]) {
+    cout << i + " ";
   }
-  cout << endl;
+
+  return 0;
 }
